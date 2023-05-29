@@ -1,0 +1,130 @@
+.header {
+	background-color: black;
+	width: 100%;
+	height: 60%;
+	position: relative;
+
+	.wave {
+		width: 100%;
+		position: absolute;
+		bottom: -22%;
+		height: 150px;
+		width: 1920px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.wrapperImg {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: flex-end;
+		margin-right: 30%;
+		.bannerImg {
+			width: 30%;
+			height: 30%;
+		}
+	}
+	.menuContact {
+		display: flex;
+		justify-content: space-around;
+		width: 45%;
+		position: relative;
+		right: -40%;
+		align-content: center;
+		line-height: 80px;
+
+		.headerLink {
+			text-transform: uppercase;
+			color: white;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			cursor: pointer;
+			width: 350px;
+			margin-left: 20px;
+		}
+	}
+	.headerLinkTelephone {
+		text-transform: uppercase;
+		color: white;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		cursor: pointer;
+		width: 550px;
+		margin-left: 20px;
+	}
+	.iconMessage {
+		font-size: 25px;
+		display: inline;
+		margin-right: 2%;
+	}
+	.iconTelephone {
+		font-size: 20px;
+		display: inline;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.headerText {
+		width: 25vw;
+		height: 40vh;
+		position: absolute;
+		top: 30%;
+		left: 15%;
+
+		.mainText {
+			font-size: 50px;
+			color: white;
+		}
+		.smallerTextHeader {
+			color: white;
+			margin-top: 5%;
+			line-height: 30px;
+			color: rgb(214, 162, 66);
+		}
+		.consultationBtn {
+			text-transform: uppercase;
+			height: 50px;
+			width: 300px;
+			border-radius: 5px;
+			border: none;
+			margin-top: 8%;
+			color: rgb(39, 39, 39);
+			letter-spacing: 1px;
+			transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+		}
+	}
+	.square {
+		width: 20px;
+		height: 20px;
+		border: 2px solid rgb(94, 93, 93);
+		position: absolute;
+		border-radius: 50%;
+		top: 650px;
+		right: 60px;
+		animation: bounce 4s ease-in infinite;
+		z-index: 2;
+	}
+	.dot {
+		width: 10px;
+		height: 10px;
+		border: 2px solid rgb(94, 93, 93);
+		position: absolute;
+		top: 50px;
+		left: 60px;
+		animation: bounce 3s ease-in infinite;
+	}
+	@keyframes bounce {
+		10% {
+			height: 30px;
+			width: 30px;
+		}
+		50% {
+			height: 20px;
+			width: 35px;
+			transform: translateY(100px);
+		}
+	}
+}
