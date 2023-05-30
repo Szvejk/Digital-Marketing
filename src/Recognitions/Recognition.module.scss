@@ -1,0 +1,31 @@
+.background {
+	width: 100vw;
+	height: 50vh;
+	background-color: rgb(3, 1, 5);
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
+
+	.recognitionsHeader {
+		margin-top: 5%;
+		font-size: 40px;
+		color: orange;
+		width: 100%;
+		text-align: center;
+	}
+	.photos {
+		height: 20vh;
+		width: 50vw;
+		display: flex;
+		justify-content: center;
+		justify-content: space-around;
+		flex-direction: row;
+		margin-top: 2%;
+		.photo1,
+		.photo2,
+		.photo3 {
+			width: 200px;
+		}
+	}
+}
