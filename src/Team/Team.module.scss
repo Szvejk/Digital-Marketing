@@ -1,0 +1,43 @@
+.flexTeam {
+	width: 100%;
+	height: 80vh;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+  
+	.grid {
+		width: 60vw;
+		height: 80vh;
+		display: grid;
+		grid-template-columns: repeat(4, 300px);
+		grid-auto-rows: repeat(3, 300px);
+		gap: 30px;
+		.photo {
+			width: 100%;
+		}
+		.name {
+			display: block;
+			margin: 4%;
+			font-weight: 600;
+			letter-spacing: 1px;
+			color: orange;
+		}
+	}
+	.titleTeam {
+		margin: 3%;
+		h4 {
+			color: orange;
+			text-align: center;
+			font-weight: 700;
+		}
+		.meetUs {
+			margin-top: 2%;
+			font-size: 45px;
+		}
+	}
+    .wrapper{
+        border: 1px solid rgb(187, 186, 186);
+    }
+}

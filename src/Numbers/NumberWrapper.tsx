@@ -33,27 +33,24 @@ const NumberWrapper = () => {
 	let interval = 5000;
 
 	return (
-		<div>
-			<div className={styles.wrapper}>
-				<h1 className={styles.numbersTitle}>
-					{' '}
-					Best Digital Marketing Services for your business
-				</h1>
-				<div className={styles.elementsWrapper}>
-					{boxes.map((el) => {
-						return (
-							<div key={el.id}>
-								<div className={styles.numbers}>
-									<CountAnimation duration={3000} endCount={el.endCount} />{' '}
-									<span className={styles.plus}>+ </span>{' '}
-								</div>
-								<span className={styles.text}>{el.text}</span>
+		<div className={styles.wrapper}>
+			<h1 className={styles.numbersTitle}>
+				{' '}
+				Best Digital Marketing Services for your business
+			</h1>
+			<div className={styles.elementsWrapper}>
+				{boxes.map((el) => {
+					return (
+						<div key={el.id}>
+							<div className={styles.numbers}>
+								<CountAnimation duration={3000} endCount={el.endCount} />{' '}
+								<span className={styles.plus}>+ </span>{' '}
 							</div>
-						);
-					})}
-				</div>
+							<span className={styles.text}>{el.text}</span>
+						</div>
+					);
+				})}
 			</div>
-			);
 		</div>
 	);
 };

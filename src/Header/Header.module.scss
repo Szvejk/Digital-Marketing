@@ -5,11 +5,10 @@
 	position: relative;
 
 	.wave {
-		width: 100%;
 		position: absolute;
 		bottom: -22%;
 		height: 150px;
-		width: 1920px;
+		width: 1905px;
 		left: 0px;
 		overflow: hidden;
 	}
@@ -94,16 +93,12 @@
 			color: rgb(39, 39, 39);
 			letter-spacing: 1px;
 			transition: transform 1s ease, background-color 0.3s, color 0.3s;
-            &:hover{
-                transform: translateY(-20px);
-                background-color: orange;
-                color: white;
-            }
+			&:hover {
+				transform: translateY(-20px);
+				background-color: orange;
+				color: white;
+			}
 		}
-
-
-
-        
 	}
 	.square {
 		width: 20px;
