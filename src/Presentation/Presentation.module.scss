@@ -26,7 +26,6 @@
 		.rightSidePresentation {
 			height: 20vh;
 			width: 25vw;
-
 			margin: 5%;
 			text-align: left;
 			display: flex;
@@ -63,5 +62,46 @@
 				}
 			}
 		}
+	}
+}
+@media (max-width: 1000px) {
+	.wrapperPresentation {
+		height: 90vh;
+		width: 100vw;
+	
+		.welcomeText {
+			font-size: 18px;
+			line-height: 25px;
+			margin-top: 5%;
+		}
+		.describeText {
+			font-size: 20px;
+			color: orange;
+			margin-top: 10px;
+		}
+
+
+	
+
+		.sides{
+	height: 80vh;
+			display: flex;
+			flex-direction: column;
+			width: 100vw;
+			align-items: center;
+
+			.leftSidePresentation{
+				width: 80vw;
+				display: flex;
+				align-items: center;
+				justify-items: center;
+			}
+		}
+	}
+	.describeDegrees {
+		font-size: 14px;
+		line-height: 20px;
+
+		
 	}
 }

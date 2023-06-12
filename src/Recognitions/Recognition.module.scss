@@ -29,3 +29,28 @@
 		}
 	}
 }
+@media (max-width: 1000px) {
+	.background {
+		height: 60vh;
+
+		.recognitionsHeader {
+			margin-top: 5%;
+			font-size: 25px;
+		}
+		.photos {
+			height: 55vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			.photo1,
+			.photo2,
+			.photo3 {
+				width: 150px;
+				margin: 4%;
+			}
+		}
+	}
+}

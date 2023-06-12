@@ -5,6 +5,7 @@ import Recognition from './Recognitions/Recognition'
 import NumberWrapper from './Numbers/NumberWrapper'
 import Serviceoffer from './ServiceOffer/Serviceoffer'
 import Team from './Team/Team'
+import Footer from './Footer/Footer'
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
       <NumberWrapper />
       <Serviceoffer />
       <Team />
+      <Footer />
     </>
   )
 }

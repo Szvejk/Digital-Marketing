@@ -1,32 +1,47 @@
-import React from 'react';
+import {useState} from 'react';
 import styles from './Header.module.scss';
 import banner from '../img/banner.png';
 import waves from '../img/waves (2).svg';
 import { AiOutlineComment } from 'react-icons/ai';
 import { BsTelephoneForwardFill } from 'react-icons/bs';
+import { FcLike } from "react-icons/fc";
 const Header = () => {
+
+const[open, setIsOpen] = useState(false)
+
+const toggleMenu = ( ) => {
+	setIsOpen((open) => !open)
+}
+
 	return (
+		<>
 		<section className={styles.header}>
 			<div className={styles.menuContact}>
-				<span className={styles.headerLink}>
+				<li className={styles.headerLink}>
+				 <FcLike  onClick={() =>setIsOpen((prev) => !prev)}
+				 />
+				 {open &&(
 					<span className={styles.iconMessage}>
 						{' '}
 						<AiOutlineComment />{' '}
 					</span>
-					info@thecreatives360.com
-				</span>
+					info@thecreatives360
+				</li>
 
 				<span className={styles.headerLinkTelephone}>
-					<span className={styles.iconTelephone}>
+					<li className={styles.iconTelephone}>
 						<BsTelephoneForwardFill />{' '}
-					</span>
+					</li>
 					+971 50 267 1236
 				</span>
 
-				<span className={styles.headerLink}>Services</span>
-				<span className={styles.headerLink}>Blog</span>
-				<span className={styles.headerLink}>Contact us</span>
+				<li className={styles.headerLink}>Services</li>
+				<li className={styles.headerLink}>Blog</li>
+				<li className={styles.headerLink}>Contact us</li>	
+				 )}
 			</div>
+			
+					
 
 			<div className={styles.wrapperImg}>
 				<img src={banner} className={styles.bannerImg} alt='people with pen' />
@@ -48,8 +63,9 @@ const Header = () => {
 			<div className={styles.square}></div>
 
 			<img src={waves} className={styles.wave} alt='' />
-		</section>
+		</section></>
+		
 	);
-};
-
+}
+	
 export default Header;
