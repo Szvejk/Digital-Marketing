@@ -27,7 +27,7 @@ const Footer = () => {
 						<li>Photography and Videography</li>
 					</div>
 			
-			</div>
+				</div>
 		</div>
 	);
 };

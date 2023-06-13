@@ -20,7 +20,7 @@ const toggleMenu = ( ) => {
 				<li className={styles.headerLink}>
 				 <FcLike  onClick={() =>setIsOpen((prev) => !prev)}
 				 />
-				 {open &&(
+				 (
 					<span className={styles.iconMessage}>
 						{' '}
 						<AiOutlineComment />{' '}
@@ -38,7 +38,7 @@ const toggleMenu = ( ) => {
 				<li className={styles.headerLink}>Services</li>
 				<li className={styles.headerLink}>Blog</li>
 				<li className={styles.headerLink}>Contact us</li>	
-				 )}
+				 )
 			</div>
 			
 					
