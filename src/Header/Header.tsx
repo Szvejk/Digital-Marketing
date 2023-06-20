@@ -23,20 +23,21 @@ const Header = () => {
 					{!open && (
 						<>
 							{' '}
-							<span className={styles.iconMessage}>
-								{' '}
-								<AiOutlineComment />{' '}
-							</span>
-							info@thecreatives360
-							<span className={styles.headerLinkTelephone}>
-								<li className={styles.iconTelephone}>
-									<BsTelephoneForwardFill />{' '}
-								</li>
-								+971 50 267 1236
-							</span>
-							<li className={styles.headerLink}>Services</li>
-							<li className={styles.headerLink}>Blog</li>
-							<li className={styles.headerLink}>Contact us</li>{' '}
+							<div className={styles.wrapperLi}>
+								<span className={styles.iconMessage}>
+									<AiOutlineComment />{' '}
+								</span>
+								info@thecreatives360
+								<span className={styles.headerLinkTelephone}>
+									<li className={styles.iconTelephone}>
+										<BsTelephoneForwardFill />{' '}
+									</li>
+									+971 50 267 1236
+								</span>
+								<li className={styles.headerLink}>Services</li>
+								<li className={styles.headerLink}>Blog</li>
+								<li className={styles.headerLink}>Contact us</li>{' '}
+							</div>
 						</>
 					)}
 				</div>

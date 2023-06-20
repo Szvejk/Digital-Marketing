@@ -3,10 +3,57 @@
 	width: 100%;
 	height: 60%;
 	position: relative;
-	.heart {
-		display: block;
-		font-size: 35px;
+	.menuContact {
+		display: flex;
+		justify-content: flex-end;
+		width: 45%;
+		position: relative;
+		right: -50%;
+		align-content: center;
+		line-height: 80px;
+		.heart {
+			display: none;
+		}
+		.headerLink {
+			text-transform: uppercase;
+			color: white;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			cursor: pointer;
+			width: 350px;
+			margin-left: 20px;
+		}
 	}
+	.wrapperLi {
+		width: 50%;
+		display: flex;
+
+		.headerLinkTelephone {
+			text-transform: uppercase;
+			color: white;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			cursor: pointer;
+			width: 550px;
+			margin-left: 20px;
+		}
+		.iconMessage {
+			font-size: 25px;
+			display: inline;
+			margin-right: 2%;
+		}
+		.iconTelephone {
+			font-size: 20px;
+			display: inline;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+
 	.wave {
 		position: absolute;
 		bottom: -22%;
@@ -26,49 +73,7 @@
 			height: 30%;
 		}
 	}
-	.menuContact {
-		display: flex;
-		justify-content: flex-end;
-		width: 45%;
-		position: relative;
-		right: -50%;
-		align-content: center;
-		line-height: 80px;
 
-		.headerLink {
-			text-transform: uppercase;
-			color: white;
-			font-weight: 600;
-			display: flex;
-			align-items: center;
-			justify-items: center;
-			cursor: pointer;
-			width: 350px;
-			margin-left: 20px;
-		}
-	}
-	.headerLinkTelephone {
-		text-transform: uppercase;
-		color: white;
-		font-weight: 600;
-		display: flex;
-		align-items: center;
-		justify-items: center;
-		cursor: pointer;
-		width: 550px;
-		margin-left: 20px;
-	}
-	.iconMessage {
-		font-size: 25px;
-		display: inline;
-		margin-right: 2%;
-	}
-	.iconTelephone {
-		font-size: 20px;
-		display: inline;
-		margin-right: 10px;
-		margin-left: 10px;
-	}
 	.headerText {
 		width: 25vw;
 		height: 40vh;
@@ -137,16 +142,37 @@
 }
 
 @media (max-width: 1000px) {
-
 	.mainText {
 		font-size: 30px;
 	}
+	.dot {
+		display: none;
+	}
+
 	.header {
 		height: 100vh;
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
+		.heart {
+			display: flex;
+			font-size: 30px;
+			height: 80px;
+			width: 80px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.wrapperLi {
+			display: flex;
+			flex-direction: column;
+			background-color: red;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
 	}
+
 	.smallerTextHeader {
 		display: none;
 	}
@@ -164,9 +190,5 @@
 	.headerText {
 		width: 50vw;
 		font-size: 20px;
-	}
-
-	.heart {
-		display: block;
 	}
 }

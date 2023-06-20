@@ -1,24 +1,23 @@
 .flexTeam {
 	width: 100%;
-	height: 150%;
+	height: 50vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(4, 220px);
+		grid-template-columns: repeat(4, 200px);
 		grid-template-rows: repeat(2, 200px);
-		width: 60vw;
-		height: 50vh;
+		
+		gap: 25px;
 
 		.photo {
-			width: 250px;
+			width: 200px;
 		}
 	}
-
 }
-	.titleTeam{
+.titleTeam {
 	width: 100%;
 	height: 12%;
 	background-color: pink;
@@ -28,5 +27,44 @@
 	justify-items: center;
 	padding: 20px;
 	margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+	.flexTeam {
+		width: 100vw;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-items: center;
 
+		.grid {
+			display: flex;
+			flex-direction: column;
+		
+		
+			align-items: center;
+			justify-items: center;
+
+			.photo {
+				width: 200px;
+			}
+		}
+		.wrapper {
+			height: 25vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 2%;
+		}
 	}
+	.titleTeam {
+		width: 100%;
+		height: 12%;
+		background-color: pink;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+}
