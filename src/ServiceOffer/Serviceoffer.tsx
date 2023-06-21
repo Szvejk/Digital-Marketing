@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Serviceoffer.module.scss';
 
+
 type ServiceSingle = {
 	id: number;
 	title: string;
@@ -35,18 +36,22 @@ const Serviceoffer = () => {
 			<h2 className={styles.servicesTitle}>OUR WAY TO SUCCESS</h2>
 			<div className={styles.wrapperServices}>
 				{service.map((el) => {
-					return (
+					return ( <> 
 						<div key={el.id}>
 							<div className={styles.singleElement}>
 								<h5 className={styles.titleOfService}> {el.title}</h5>
 								<p className={styles.descriptionService}>{el.text}</p>
 							</div>
 						</div>
+						
+						</>
 					);
 				})}
 			</div>
 		</section>
+
 	);
 };
+
 
 export default Serviceoffer;

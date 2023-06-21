@@ -35,13 +35,21 @@
 		font-size: 20px;
 		line-height: 30px;
 	}
+	.asideText{
+		width: 50%;
+		height: 50%;
+		background-color: #fff;
+	}
 }
 @media (max-width: 1000px) {
 	.wrapperOffer {
-		height: 80vh;
-	
+		height: 100vh;
+	.wrapperServices{
+		height: 80%;
+	}
 		.servicesTitle {
 			font-size: 20px;
+			margin: 30px;
 		}
 		.service1,
 		.service2,

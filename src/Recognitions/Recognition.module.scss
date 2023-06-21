@@ -31,15 +31,14 @@
 }
 @media (max-width: 1000px) {
 	.background {
-		height: 60vh;
+		height: 70vh;
 
 		.recognitionsHeader {
-			margin-top: 5%;
+			margin-bottom: 3%;
 			font-size: 25px;
 		}
 		.photos {
-			height: 55vh;
-
+			height: 60vh;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -51,6 +50,23 @@
 				width: 150px;
 				margin: 4%;
 			}
+		}
+	}
+}
+@media (max-width: 800px) {
+	.background {
+		height: 80vh;
+	}
+	.recognitionsHeader {
+		margin-bottom: 12%;
+		font-size: 20px;
+	}
+	.photos {
+		height: 100%;
+		.photo1,
+		.photo2,
+		.photo3 {
+			width: 100px;
 		}
 	}
 }
